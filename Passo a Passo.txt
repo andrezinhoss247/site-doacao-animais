@@ -1,0 +1,39 @@
+-> Criar repositório git
+	Nome do Repositorio 
+	Marcar 'Add a README file'
+	Marcar 'Add .gitignore'
+		Escolher a opção '.gitignore template: Node'	
+----------------------------------------------------
+
+-> Criar pasta para projeto 
+-> Clonar repositório git
+	git clone linkDoRepositorio
+
+-> Criar package.json
+	npm init
+
+-> Criar tsconfig.json
+	tsc --init
+
+-> Configurar tsconfig.json
+	"rootDir":"./src"
+	"outDir":"./dist"
+	"moduleResolution": "node10"
+
+-> Instalando Dependências
+	npm install express
+	npm install mustache-express
+	npm install dotenv
+	
+-> Instalando Dependências de Desenvolvimento
+	npm install --save-dev @types/express
+	npm install --save-dev @types/mustache-express
+	npm install --save-dev @types/node
+
+-> Instalação Dependecias globais
+	npm install nodemon typescript ts-node
+
+-> Criar pasta src no projeto
+
+-> Configurar package.json
+	
