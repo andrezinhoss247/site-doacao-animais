@@ -12,17 +12,20 @@
 -> Criar package.json
 	npm init
 
+---------------------------------------------------
 -> Criar tsconfig.json
 	tsc --init
 
--> Configurar tsconfig.json
-	"rootDir":"./src"
-	"outDir":"./dist"
-	"moduleResolution": "node10"
+	-> Configurar tsconfig.json
+		"target": "es6",
+		"rootDir":"./src"
+		"outDir":"./dist"
+		"moduleResolution": "node10"
 
+----------------------------------------------------
 -> Instalando Dependências
-	npm install express
-	npm install mustache-express
+	npm install express  
+	npm install mustache-express  
 	npm install dotenv
 	
 -> Instalando Dependências de Desenvolvimento

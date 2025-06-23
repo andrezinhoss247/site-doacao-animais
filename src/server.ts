@@ -26,6 +26,7 @@ server.set('view engine', 'mustache');
 server.set('views', path.join(__dirname, 'views')); // <-- certifique-se de criar essa pasta
 
 
+server.use(express.static(path.join(__dirname, '../public')));
 
 server.use(router)
 server.use((req, res) => {
@@ -35,7 +36,7 @@ server.use((req, res) => {
 
 // Define a pasta pública de arquivos estáticos (ex: CSS, JS, imagens)
 // O caminho relativo é para a pasta "public", que está um nível acima
-server.use(express.static(path.join(__dirname, '../public')));
+
 
 // Inicia o servidor escutando na porta definida no arquivo .env
 server.listen(process.env.PORT)
